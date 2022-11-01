@@ -2,7 +2,7 @@ package methodsExercises;
 
 import java.util.Scanner;
 
-public class Exercise2 {
+public class Methods {
     public static void printMax(float number1,float number2) {
 
         float max = number1;
