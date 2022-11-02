@@ -19,7 +19,7 @@ public class Triangle {
 
     }
 
-}
+
 
     private static void printLine(int start, int end) {
         for (int i = start; i <= end; i++) {

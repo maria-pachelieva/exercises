@@ -29,22 +29,22 @@ public class Ex5 {
 
         System.out.print(arrayMax);
 
-        for (double singleBookPrice : prices) {
-            totalAmount += singleBookPrice;
-        }
-
-
-        for (int i = 0; i<prices.length; i++) {
-            double singleBookPrice = prices[i];
-
-
-
-
-
-
-
-            totalAmount += singleBookPrice;
-        }
+//        for (double singleBookPrice : prices) {
+//            totalAmount += singleBookPrice;
+//        }
+//
+//
+//        for (int i = 0; i<prices.length; i++) {
+//            double singleBookPrice = prices[i];
+//
+//
+//
+//
+//
+//
+//
+//            totalAmount += singleBookPrice;
+//        }
 
 
     }
