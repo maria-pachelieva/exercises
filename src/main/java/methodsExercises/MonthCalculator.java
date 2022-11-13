@@ -48,25 +48,27 @@ public class MonthCalculator {
         }
         System.out.print(monthName);
     }
-    public static void sayPeriod (int startMonth, int endMonht){
+
+    public static void sayPeriod(int startMonth, int endMonht) {
         int period = endMonht - startMonth;
-        if (period<0){
+        if (period < 0) {
             period = period + 12;
         }
         System.out.printf("There is %d months period from", period);
         sayMonth(startMonth);
         System.out.print(" to  ");
-        sayMonth (endMonht);
+        sayMonth(endMonht);
         System.out.println(".");
 
     }
-    public static void main (String[] args){
+
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("First month is(1-12):");
         int firstMonth = input.nextInt();
         System.out.print("Second month is(1-12): ");
-                int secondMonth = input.nextInt();
-        sayPeriod(firstMonth,secondMonth);
+        int secondMonth = input.nextInt();
+        sayPeriod(firstMonth, secondMonth);
         input.close();
     }
 }
