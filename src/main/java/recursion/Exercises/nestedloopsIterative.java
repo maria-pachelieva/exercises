@@ -21,24 +21,35 @@ public class nestedloopsIterative {
 
     public static void nestedLoops() {
         initLoops();
-        int currentPosition = numberOfLoops - 1;
-        loops[currentPosition] = loops[currentPosition] + 1;
+        int currentPosition;
 
-        while (loops[currentPosition] > numberOfIterations) {
-            loops[currentPosition] = 1;
-            currentPosition--;
-            if (currentPosition < 0) {
-                return;
-            }
+        while (true) {
+            printLoops ();
+            currentPosition = numberOfLoops - 1;
             loops[currentPosition] = loops[currentPosition] + 1;
+            while (loops[currentPosition] > numberOfIterations) {
+                loops[currentPosition] = 1;
+                currentPosition--;
+
+                if (currentPosition < 0) {
+                    return;
+                }
+                loops[currentPosition] = loops[currentPosition] + 1;
+            }
+
         }
     }
 
-}
 
     public static void initLoops() {
         for (int i = 0; i < numberOfLoops; i++) {
             loops[i] = 1;
+        }
+
+    }
+    public static void printLoops(){
+        for (int i =0; i<numberOfLoops;i++){
+            System.out.printf("%d",loops[i]);
         }
         System.out.println();
     }
