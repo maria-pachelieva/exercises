@@ -3,7 +3,7 @@ package methodsExercises;
 import java.util.Scanner;
 
 public class EX3 {
-    public static void main(new String[] args) {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         printLastNumber(number);

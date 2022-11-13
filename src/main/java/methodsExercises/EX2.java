@@ -10,11 +10,11 @@ public class EX2 {
         System.out.println("Enter number 2:");
         int number2 = input.nextInt();
 
-        getMax(number1, number2, );
+        getMax(number1, number2);
 
     }
 
-    public static void getMax(int num1, int num2,) {
+    public static void getMax(int num1, int num2) {
         System.out.println(Math.max(num1, num2));
 
 

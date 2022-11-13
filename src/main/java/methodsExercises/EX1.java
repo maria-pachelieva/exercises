@@ -9,7 +9,7 @@ public class EX1 {
         printName(name);
 
     }
-    public static void printName (new string blah){
+    public static void printName (String blah){
         System.out.printf("Hello,%n", blah);
     }
 

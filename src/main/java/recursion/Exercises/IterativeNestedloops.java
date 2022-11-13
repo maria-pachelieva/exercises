@@ -2,7 +2,7 @@ package recursion.Exercises;
 
 import java.util.Scanner;
 
-public class nestedloopsIterative {
+public class IterativeNestedloops {
     public static int numberOfLoops;
     public static int numberOfIterations;
     public static int[] loops;
@@ -24,7 +24,9 @@ public class nestedloopsIterative {
         int currentPosition;
 
         while (true) {
-            printLoops ();
+
+            printLoops();
+
             currentPosition = numberOfLoops - 1;
             loops[currentPosition] = loops[currentPosition] + 1;
             while (loops[currentPosition] > numberOfIterations) {
@@ -47,9 +49,10 @@ public class nestedloopsIterative {
         }
 
     }
-    public static void printLoops(){
-        for (int i =0; i<numberOfLoops;i++){
-            System.out.printf("%d",loops[i]);
+
+    public static void printLoops() {
+        for (int i = 0; i < numberOfLoops; i++) {
+            System.out.printf("%d", loops[i]);
         }
         System.out.println();
     }
