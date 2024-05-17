@@ -6,23 +6,57 @@ public class LastNumberName {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
-        double last = lastNumber(number);
-        //printNumber(last);
+        int last = lastNumber(number);
+        //System.out.println(last);
+        printNumber(last);
     }
 
-    public static void lastNumber(double number) {
-        double lastN = 0;
-        if (number > 10) {
-            lastN = number - Math.floor(number / 10);
-        } else {
-            lastN = number;
+    public static int lastNumber(int number) {
+        int lastN = number % 10;
+        return lastN;
+    }
+
+    public static void printNumber(int number) {
+        String numberName = "";
+        switch (number) {
+            case 0:
+                numberName = "zero";
+                break;
+            case 1:
+                numberName = "one";
+                break;
+            case 2:
+                numberName = "two";
+                break;
+            case 3:
+                numberName = "three";
+                break;
+            case 4:
+                numberName = "four";
+                break;
+            case 5:
+                numberName = "five";
+                break;
+            case 6:
+                numberName = "six";
+                break;
+            case 7:
+                numberName = "seven";
+                break;
+            case 8:
+                numberName = "eight";
+                break;
+            case 9:
+                numberName = "nine";
+                break;
+            default:
+                System.out.println("Error!");
+                break;
+
         }
-        System.out.println(lastN);
-        //return lastN;
-    }
-    //public static void printNumber(int number) {
+        System.out.println(numberName);
 
-    //}
+    }
 
 }
 
