@@ -2,7 +2,7 @@ package metodsNakovBookExercise;
 
 public class FirstBigger {
     public static void main(String[] args) {
-        int arr[] = new int[]{1, 6, 0, 2, 5, 7, 23, 23, 6, 2, 3, 5, 1, 1, 2};
+        int arr[] = new int[]{10,9,8,7,6,5};
         firstElBigger(arr);
     }
 
@@ -13,6 +13,8 @@ public class FirstBigger {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i - 2]) {
                 number = i;
                 break;
+            } else if (arr[i] < arr[i - 1] && arr[i] < arr[i - 2]){
+                number = -1;
             }
         }
         System.out.println(number);
