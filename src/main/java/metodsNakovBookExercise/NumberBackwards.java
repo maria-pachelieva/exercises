@@ -6,14 +6,35 @@ public class NumberBackwards {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String number = input.nextLine();
+        int chisloto = input.nextInt();
         backwards(number);
+        bakwSecondSolution(chisloto);
+
     }
 
-    public static String backwards(String number) {
-        String back = new String("");
-        for (int i = number.length(); i >= 0; i--) {
-            back.charAt(0) = number.charAt(i);
+    public static void backwards(String number) {
+        String backNum = new String("");
+        char ch;
+        for (int i = 0; i < number.length(); i++) {
+            ch = number.charAt(i);
+            backNum = ch + backNum;
         }
-        return back;
+        //  for (int a = 0; a < number.length(); a++) {
+        //     backNum.charAt(a) = number.charAt(i);
+        //  }
+        // }
+        System.out.println(backNum);
+
     }
+
+    public static void bakwSecondSolution(int numb2) {
+
+        while (numb2 > 0) {
+            int next = numb2 % 10;
+            numb2 = numb2/10 ;
+            System.out.print(next);
+        }
+
+    }
+
 }
