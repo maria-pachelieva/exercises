@@ -12,11 +12,14 @@ public class Cat {
     public void setName(String name) {
         this.name = name;
     }
-    public void setColour(String name) {
-        this.colour = name;
+
+
+    public void setColour(String colour) {
+        this.colour = colour;
     }
 
-    public String getColour(String colour) {
+    public String getColour() {
+
         return this.colour;
     }
 
@@ -24,12 +27,14 @@ public class Cat {
         this.name = "Unnamed";
         this.colour = "gray";
     }
-    public Cat (String name, String colour){
+
+    public Cat(String name, String colour) {
         this.name = name;
         this.colour = colour;
     }
-    public void sayMiau(){
-        System.out.printf("Cat %s said: Miauuuuuuu!%n",name);
+
+    public void sayMiau() {
+        System.out.printf("Cat %s said: Miauuuuuuu!%n", name);
     }
 
 }
