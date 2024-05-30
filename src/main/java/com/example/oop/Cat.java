@@ -2,30 +2,34 @@ package com.example.oop;
 
 // Create a Main class
 public class Cat {
-    String name;
-    int age;
+    private String name;
+    private String colour;
 
-    // Create a class constructor for the Main class
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setColour(String name) {
+        this.colour = name;
+    }
+
+    public String getColour(String colour) {
+        return this.colour;
+    }
+
     public Cat() {
-
+        this.name = "Unnamed";
+        this.colour = "gray";
     }
-
-    public Cat(String name) {
+    public Cat (String name, String colour){
         this.name = name;
-
+        this.colour = colour;
+    }
+    public void sayMiau(){
+        System.out.printf("Cat %s said: Miauuuuuuu!%n",name);
     }
 
-    public Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-
-
-
-    public static void main(String[] args) {
-        Cat myCat = new Cat("Rumen",3);
-        System.out.println(myCat.name);
-        System.out.println(myCat.age);
-    }
 }
