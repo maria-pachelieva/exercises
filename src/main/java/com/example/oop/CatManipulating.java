@@ -6,7 +6,7 @@ public class CatManipulating {
         myCat.setName ("Alfred");
 
         Cat myBrownCat = new Cat("Johnny","gray");
-        System.out.println(myBrownCat.getName(), myBrownCat.getColour());
+       // System.out.println(myBrownCat.getName(), myBrownCat.getColour());
         myCat.sayMiau();
         myBrownCat.sayMiau();
     }
