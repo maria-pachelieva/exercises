@@ -36,7 +36,7 @@ public static void main (String[] args){
         insertAtRandomPosition(password,specialChar);
 
     }
-
+System.out.println(password);
 
 }
 
