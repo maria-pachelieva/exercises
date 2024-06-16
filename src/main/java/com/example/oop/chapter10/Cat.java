@@ -1,4 +1,4 @@
-package com.example.oop;
+package com.example.oop.chapter10;
 
 // Create a Main class
 public class Cat {

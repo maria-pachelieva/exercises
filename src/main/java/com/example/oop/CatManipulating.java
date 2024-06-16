@@ -1,5 +1,7 @@
 package com.example.oop;
 
+import com.example.oop.chapter10.Cat;
+
 public class CatManipulating {
     public static void main(String[] args) {
         Cat myCat = new Cat();
